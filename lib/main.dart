@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation/nav/home_nav.dart';
 import 'package:navigation/screens/home_screen.dart';
 import 'package:navigation/screens/welcome.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       home: const Welcome(),
       //declaring the routes e.g navigating to home screen
       routes: {
-        "/home":(context) => HomeScreen()
+        "/home":(context) => HomeScreen(),
+        "/nav":(context) => HomeNav()
       },
     );
   }

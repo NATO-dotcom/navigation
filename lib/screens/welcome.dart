@@ -23,7 +23,7 @@ class Welcome extends StatelessWidget {
           const SizedBox(height: 200),
 
           GestureDetector(
-            onTap: () => Navigator.pushNamed(context, "/home"),
+            onTap: () => Navigator.pushReplacementNamed(context, "/nav"),
 
             child: Container(
               width: 300,
